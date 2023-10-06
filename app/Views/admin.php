@@ -196,7 +196,7 @@
                             <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
                         </form>
                         <div class="login_btn-container">
-                            <a style="background-color: red" href="/logout">logout</a>
+                            <a style="background-color: red" href="/logout">LOGOUT</a>
                         </div>
                     </div>
                 </div>
@@ -214,33 +214,33 @@
                         <form method="post" action="/save" enctype="multipart/form-data">
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label for="image">Book Image</label>
+                                    <label for="image">Book Image: </label>
                                     <input type="hidden" name="id" value="<?= isset($pro['id']) ? $pro['id'] : '' ?>">
                                     <input type="file" class="form-control-file" id="image" name="image"
                                         accept="image/*" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="name">Book Name</label>
+                                    <label for="name">Book Name: </label>
                                     <input type="text" class="form-control" id="name" name="name" required
                                         value="<?= isset($pro['name']) ? $pro['name'] : '' ?>">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="description">Book Description</label>
+                                    <label for="description">Book Description: </label>
                                     <textarea class="form-control" id="description" name="description" rows="3"
                                         required><?= isset($pro['description']) ? $pro['description'] : '' ?></textarea>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="price">Book Price</label>
+                                    <label for="price">Book Price: </label>
                                     <input type="number" class="form-control" id="price" name="price" required
                                         value="<?= isset($pro['price']) ? $pro['price'] : '' ?>">
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <a href="/admin" class="btn btn-secondary">Clear</a>
-                                <button type="submit" class="btn btn-success">Save</button>
+                                <a href="/admin" class="btn btn-secondary">CLEAR</a>
+                                <button type="submit" class="btn btn-success">SAVE</button>
                             </div>
                         </form>
                     </div>
